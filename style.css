@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html,body{
+    height: 100%;            
+    width: 100%;
+}
+
+#main
+{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(210, 211, 206);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#circle{
+    width: 200vh;
+    height:200vh;
+    border-radius: 50%;
+    position: absolute;
+    left: -100vh;
+    top: 50%;
+    transform:translate(0,-50%) rotate(100deg);
+    border: 2px solid  #dadada;
+    
+
+}
+
+.stripe{
+    width:  100%;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(0,-50%);
+    transform-origin: 0% 50%;
+    display: flex;
+}
+
+.str1{
+    transform: translate(0,-50%) rotate(-20deg);
+}
+
+.str2{
+    transform: translate(0,-50%) rotate(-10deg);
+}
+
+.str4{
+    transform: translate(0,-50%) rotate(10deg);
+}
+
+.str5{
+    transform: translate(0,-50%) rotate(20deg);
+}
+
+.first{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.smcircle{
+    position: absolute;
+    width: .5vw;
+    height: .5vw;
+    border-radius: 50%;
+    background-color: rgb(170, 161, 165);
+    top: 50%;
+    right: -.25vw;
+    transform: translate(0,-50%);
+}
+.sec{
+    opacity: .4;
+    width: 50%;
+    height: 100%;
+    padding-left: 30px;
+}
+
+.sec h4{
+    font-size: 2vw;
+}
+
+.sec h6{
+    font-size: 1.5vw;
+    opacity: .5;
+    font-weight: 500;
+}
+
+#panel{
+    width: 5%;
+    height: 20%;
+    position: absolute;
+    right: 3%;
+    top: 50%;
+    transform: translate(0,-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.mncircle{
+    cursor: pointer;
+    width: 1vw;
+    height:     1vw;
+    background-color: rgb(15, 14, 14);;
+    border-radius: 50%;
+    opacity: .2;
+
+}
